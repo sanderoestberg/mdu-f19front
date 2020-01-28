@@ -1,7 +1,5 @@
 "use strict";
 
-// =========== Single Page Application functionality =========== //
-
 // hide all pages
 function hideAllPages() {
   let pages = document.querySelectorAll(".page");
@@ -14,7 +12,6 @@ function hideAllPages() {
 function showPage(pageId) {
   hideAllPages();
   document.querySelector(`#${pageId}`).style.display = "block";
-  location.href = `#${pageId}`;
   setActiveTab(pageId);
 }
 
@@ -27,35 +24,22 @@ function setActiveTab(pageId) {
     } else {
       page.classList.remove("active");
     }
-
   }
 }
 
-// set default page
-function setDefaultPage() {
-  let page = "products";
+// navigate to a new view/page by changing href
+function navigateTo(pageId){
+  location.href = `#${pageId}`;
+}
+
+// set default page or given page by the hash url
+// function is called 'onhashchange'
+function pageChange() {
+  let page = "home";
   if (location.hash) {
     page = location.hash.slice(1);
   }
   showPage(page);
 }
 
-setDefaultPage();
-
-// =========== Product functionality =========== //
-
-let products = [
-  // to do
-];
-
-function appendProducts() {
-  // to do
-}
-
-function addNewProduct() {
-  // to do
-}
-
-function search(value) {
-  // to do
-}
+pageChange(); // called by default when the app is loaded for the first time
