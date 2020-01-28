@@ -11,7 +11,7 @@ let teacher1 = {
   address: "Sønderhøj 30, 8260 Viby J",
   position: "Senior Lecturer",
   department: "Multimedia Design",
-  img: "https://www.baaa.dk/CropUp/headshot/media/1524902/birgitte-kirk-iversen.jpg"
+  img: "https://www.baaa.dk/media/u4gorzsd/birgitte-kirk-iversen2.jpg"
 };
 
 // Gertie
@@ -44,7 +44,7 @@ let teacher4 = {
   phone: "72286318",
   address: "Sønderhøj 30, 8260 Viby J",
   position: "Lecturer",
-  department: "Multimediedesigner & Professionsbachelor i digital konceptudvikling",
+  department: "Programmes within Digital Communication and Multimedia",
   img: "https://www.baaa.dk/media/devlvvgj/rasmus-cederdorff.jpg"
 };
 
