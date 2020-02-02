@@ -88,7 +88,7 @@ function appendProducts(products) {
 loads and appends json post data to the DOM
 */
 function loadPosts() {
-  fetch('http://jsonplaceholder.typicode.com/posts')
+  fetch('https://jsonplaceholder.typicode.com/posts')
     .then(function(response) {
       return response.json();
     })
