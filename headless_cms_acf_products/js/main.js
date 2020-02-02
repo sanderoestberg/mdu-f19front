@@ -12,7 +12,7 @@ function appendProducts(products) {
   for (let product of products) {
     console.log(product);
     document.querySelector("#grid-products").innerHTML += `
-    <article class = "grid-item">
+    <article>
       <h3>${product.title.rendered}</h3>
       <img src="${getFeaturedImageUrl(product)}">
       <h4>Description</h4>
