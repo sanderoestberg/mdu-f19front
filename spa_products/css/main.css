@@ -5,6 +5,8 @@
   --light-grey: #f1f1f4;
   --text-color-light: #f1f1f1;
   --text-color-dark: #333;
+  --text-color-out-of-stock: rgb(255, 97, 97); 
+  --text-color-in-stock: rgb(78, 255, 158);
 }
 
 /* ---------- general styling ---------- */
@@ -120,7 +122,15 @@ h1 {
   padding: 0.5em 0 2em;
 }
 
-/* input form stryling */
+ p.outOfStock{
+  color: var(--text-color-out-of-stock);
+}
+
+p.inStock{
+  color: var(--text-color-in-stock);
+}
+
+/* ---------- form styling ---------- */
 form {
   margin: auto;
 }
