@@ -31,7 +31,6 @@ function appendProducts(products) {
         <p class="${product.status}">Status: ${product.status}</p>
       </article>
     `;
-
   }
   document.querySelector('#products-container').innerHTML = htmlTemplate;
 }
