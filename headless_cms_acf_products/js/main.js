@@ -1,6 +1,6 @@
 "use strict";
 
-fetch("http://product-api.cederdorff.com/wp-json/wp/v2/posts?_embed")
+fetch("https://product-api.cederdorff.com/wp-json/wp/v2/posts?_embed")
   .then(function(response) {
     return response.json();
   })

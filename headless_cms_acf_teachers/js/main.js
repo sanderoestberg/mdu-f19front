@@ -1,6 +1,6 @@
 "use strict";
 
-fetch("http://headlesscms.cederdorff.com/wp-json/wp/v2/posts?_embed&categories=2")
+fetch("https://headlesscms.cederdorff.com/wp-json/wp/v2/posts?_embed&categories=2")
   .then(function(response) {
     return response.json();
   })

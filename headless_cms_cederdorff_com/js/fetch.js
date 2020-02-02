@@ -1,8 +1,8 @@
 "use strict";
 const doc = document;
 doc.addEventListener("DOMContentLoaded", function() {
-  // const postFetchUrl = "http://api.cederdorff.com/wp-json/wp/v2/posts?_embed";
-  const postFetchUrl = "http://api.cederdorff.com/wp-json/wp/v2/posts?_embed&categories=2";
+  // const postFetchUrl = "https://api.cederdorff.com/wp-json/wp/v2/posts?_embed";
+  const postFetchUrl = "https://api.cederdorff.com/wp-json/wp/v2/posts?_embed&categories=2";
 
   fetch(postFetchUrl)
     .then(function(response) {
