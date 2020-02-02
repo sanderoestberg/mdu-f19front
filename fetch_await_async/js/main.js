@@ -5,6 +5,9 @@ async function loadData() {
   let jsonData = await response.json();
   console.log(jsonData);
   appendPersons(jsonData.results);
+
+  let cvrData = await fetch('http://api.racedev.dk/cvr.json').then(res => res.json());
+  console.log(cvrData);
 }
 
 loadData();
