@@ -23,12 +23,12 @@ function appendProducts(products) {
   let htmlTemplate = "";
   for (let product of products) {
     htmlTemplate += `
-      <article>
+      <article class="${product.status}">
         <img src="${product.img}">
         <h2>${product.model}</h2>
         <h3>${product.brand}</h3>
         <p>Price: ${product.price} kr.</p>
-        <p class="${product.status}">Status: ${product.status}</p>
+        <p class="status">Status: ${product.status}</p>
       </article>
     `;
   }
@@ -42,7 +42,7 @@ function addNewProduct() {
   let img = document.querySelector('#img').value;
 
   if (brand && model && price && img) {
-    products.push({
+    _products.push({
       brand,
       model,
       price,
@@ -50,8 +50,9 @@ function addNewProduct() {
       status: 'inStock'
     });
 
-    appendProducts(products);
+    appendProducts(_products);
     navigateTo('products');
+    document.querySelector('#brand').value = "";
   } else {
     alert('Please fill out all fields');
   }
@@ -69,4 +70,13 @@ function search(value) {
   }
   console.log(filteredProducts);
   appendProducts(filteredProducts);
+}
+
+function hideOutOfStock() {
+  console.log("Hola");
+
+  let items = document.querySelectorAll('.outOfStock');
+  for (let item of items) {
+    item.style.display = "none";
+  }
 }

@@ -5,7 +5,7 @@
   --light-grey: #f1f1f4;
   --text-color-light: #f1f1f1;
   --text-color-dark: #333;
-  --text-color-out-of-stock: rgb(255, 97, 97); 
+  --text-color-out-of-stock: rgb(255, 97, 97);
   --text-color-in-stock: rgb(78, 255, 158);
 }
 
@@ -122,11 +122,11 @@ h1 {
   padding: 0.5em 0 2em;
 }
 
- p.outOfStock{
+.outOfStock p.status {
   color: var(--text-color-out-of-stock);
 }
 
-p.inStock{
+.inStock p.status {
   color: var(--text-color-in-stock);
 }
 
