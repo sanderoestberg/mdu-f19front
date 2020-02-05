@@ -12,12 +12,22 @@
 
 <body>
   <header>
-    <h1>Working with fetch and the WP JSON API</h1>
+    <a href="index.html"><h1>Movies</h1></a>
   </header>
-  <section id="grid-products" class="grid-container">
+  <input type="search" placeholder="Search" onkeyup="search(this.value)">
+  <select id="select-genre" name="genre" onchange="genreSelected(this.value)">
+    <option value="">Select Genre</option>
+  </select>
+  <section id="movies-by-genre-container" class="grid-container">
   </section>
+  <section id="grid-movies" class="grid-container">
+  </section>
+  <section id="moreInfo" class="info-container">
+  </section>
+
   <!-- main js file -->
   <script src="js/main.js"></script>
+
 </body>
 
 </html>

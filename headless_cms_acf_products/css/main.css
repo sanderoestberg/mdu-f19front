@@ -1,3 +1,14 @@
+
+*{
+  margin: 0;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 html {
   color: #333;
   display: table;
@@ -7,13 +18,26 @@ html {
   font-weight: 200;
 }
 
-h1 {
-  font-size: 1.5em;
-  font-weight: 300;
+header{
+  height: 50px;
+  background-color: #333;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
+  color: #fff;
+  padding-top: 8px;
 }
+.info-container{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 10px;
+}
+
 
 /* Grid container */
 .grid-container {
@@ -43,4 +67,32 @@ h1 {
   max-width: 300px;
   width: 100%;
   margin-bottom: 1em;
+}
+
+.info-container>article {
+  text-align: center;
+  padding: 10px;
+}
+
+.info-container>article p{
+max-width: 300px;
+margin: auto;
+}
+
+.info-container>article img {
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+input, select {
+  -webkit-appearance: none;
+  margin: 1em auto;
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 12px;
+  box-sizing: border-box;
+  display: block;
+  background: #fff;
+  border: 3px solid #333;
 }
